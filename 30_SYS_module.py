@@ -12,6 +12,15 @@ takiego pomostu miedzy Python'em a innymi językami
 
 import sys
 
-sys.stderr.write('To jest stderr text \n')
-sys.stderr.flush()
-sys.stdout.write('To jest stddout text \n')
+print (sys.platform)
+
+print (sys.version)
+
+print(sys.path)
+
+# wyświetl tylko 3 litery Twojego systemu
+if sys.platform[:3] == 'win':
+    print('Witaj uzytkowniku Windowsa')
+
+if not sys.platform[:3] == 'mac':
+    print('Hej, pracujemy na Windowsie a nie na Macu!')
